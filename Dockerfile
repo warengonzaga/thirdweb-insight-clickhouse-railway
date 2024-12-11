@@ -1,4 +1,4 @@
-FROM clickhouse/clickhouse-server:latest
+FROM clickhouse/clickhouse-server:24.11
 
 # Add SQL files to initialize the ClickHouse database
 ADD ./data/*.sql /docker-entrypoint-initdb.d/
